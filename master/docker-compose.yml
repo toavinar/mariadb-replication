@@ -2,11 +2,13 @@ version: '3.3'
 
 services:
   - adminer:
+      container_name: adminer
       image: adminer:latest
       ports:
         - 8080:8080
 
-  - bdmaster:
+  - dbmaster:
+      container_name: dbmaster
       image: mariadb:latest
       
        
